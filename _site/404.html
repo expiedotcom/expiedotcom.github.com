@@ -99,7 +99,7 @@
 </div>
 
 <div class="footer">
-    <a class="registered" data-toggle="modal" data-target="#myModal"></a>
+    <p class="registered" data-toggle="modal" data-target="#myModal"></p>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -168,6 +168,7 @@
     }
 
     function globalization(lanCode) {
+        var width = $(window).width();
         jQuery.i18n.properties({
             name : 'strings',
             path : '/i18n/',

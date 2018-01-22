@@ -219,16 +219,18 @@ nav {
 }
 
 .banner .title {
-    height: 0.32rem;
-    line-height: 0.32rem;
-    font-size: 0.32rem;
+    height: 0.38rem;
+    line-height: 0.38rem;
+    font-size: 0.38rem;
     font-family: PingFangSC-Thin, sans-serif;
     color: white;
     font-weight: bold;
 }
 
 .banner .content {
-    margin-top: 0.260416rem;
+    margin-top: 0.220416rem;
+    margin-right: 0;
+    margin-left: calc(100% - 2.291662rem);
     width: 2.291662rem;
     word-wrap: break-word;
     word-break: normal;
@@ -285,6 +287,7 @@ nav {
     .banner .content {
         margin-top: 0.28rem;
         width: 5rem;
+        margin-left: 0;
         word-wrap: break-word;
         word-break: normal;
         line-height: 0.479999rem;
@@ -300,13 +303,13 @@ nav {
     }
 
     .img-ios {
-        margin-top: 0.502083rem;
+        margin-top: 0.302083rem;
         width: 1.641666rem;
     }
 
     .img-android {
         margin-left: 0.20833rem;
-        margin-top: 0.502083rem;
+        margin-top: 0.302083rem;
         width: 1.641666rem;
     }
 }
@@ -754,11 +757,28 @@ nav {
     vertical-align: middle;
 }
 
-.registered {
+.footer .registered {
     line-height: 60px;
-    font-size: 0.177083rem;
+    font-size: 0.1rem;
+    color: #c8c8c8;
 }
 
 .modal-header .close {
     margin-top: -9px
+}
+
+@media (max-width: 768px) {
+    .footer .registered {
+        margin-left: 12px;
+        width: calc(100% - 24px);
+        height: 60px;
+        word-wrap: break-word;
+        word-break: normal;
+        line-height: 60px;
+        font-size: 13px;
+    }
+
+    .footer .registered:hover {
+        color: #4a90e2;
+    }
 }
