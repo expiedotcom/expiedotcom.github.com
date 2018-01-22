@@ -699,7 +699,7 @@ nav {
     .features-4 {
         position: relative;
         width: 10rem;
-        height: 6rem;
+        height: 5.95rem;
         background-color: white;
         overflow: hidden;
     }
@@ -751,10 +751,16 @@ nav {
 }
 
 .footer {
-    background-color: #333333;
     height: 60px;
+    width: 100%;
     text-align: center;
     vertical-align: middle;
+    background-color: #333333;
+}
+
+.link-back {
+    overflow:hidden;
+    position:relative;
 }
 
 .footer .registered {
@@ -769,6 +775,8 @@ nav {
 
 @media (max-width: 768px) {
     .footer .registered {
+        margin: 0;
+        padding: 0;
         margin-left: 12px;
         width: calc(100% - 24px);
         height: 60px;
