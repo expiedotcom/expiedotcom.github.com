@@ -544,6 +544,7 @@ nav {
         word-wrap: break-word;
         word-break: normal;
         color: #666;
+        font-family: PingFangSC-Thin, sans-serif;
     }
 
     .sum-div .summary-1 {
