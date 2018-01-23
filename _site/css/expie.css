@@ -817,18 +817,37 @@ nav {
     display: none;
     position: fixed;
     z-index: 2000;
-    left: 2rem;
-    top: calc(50% - 2.13rem);
-    width: 6rem;
-    height: 4.62rem;
+    left: 3rem;
+    top: calc(50% - 1.54rem - 21px);
+    width: 4rem;
+    height: calc(2.94rem + 42px);
     background-color: white;
 }
 
-.dialog img {
+.dialog-head {
+    height: 40px;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: white;
+}
+
+.dialog-head span {
+    float: left;
+    padding-left: 20px;
+    width: calc(100% - 62px);
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.close {
+    margin-top: 12px;
+    width: 16px;
+}
+
+.dialog .cer {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: calc(42px + 0.0725rem);
+    left: 0.2rem;
+    width: 3.6rem;
 }
 
 .footer {
@@ -850,11 +869,13 @@ nav {
     line-height: 60px;
     font-size: 0.1rem;
     color: #c8c8c8;
+    text-decoration: underline;
 }
 
-.modal-header .close {
-    margin-top: -9px
+.footer .registered:hover {
+    color: #428bca;
 }
+
 
 @media (max-width: 768px) {
     .footer .registered {
@@ -878,9 +899,16 @@ nav {
         position: fixed;
         z-index: 2000;
         left: 1rem;
-        top: calc(50% - 3.08rem);
+        top: calc(50% - 3.113rem - 20px);
         width: 8rem;
-        height: 6.16rem;
+        height: calc(6.236rem + 40px);
         background-color: white;
+    }
+
+    .dialog .cer {
+        position: absolute;
+        top: calc(42px + 0.5rem);
+        left: 0.6rem;
+        width: 6.8rem;
     }
 }
