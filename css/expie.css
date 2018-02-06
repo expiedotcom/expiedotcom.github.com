@@ -911,4 +911,8 @@ nav {
         left: 0.6rem;
         width: 6.8rem;
     }
+    .pc-header-menu ul{
+        width: 4rem;
+        display: inline-flex;
+    }
 }
